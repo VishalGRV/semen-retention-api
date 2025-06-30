@@ -1,40 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100;1,14..32,100&family=Noto+Sans:ital,wdth,wght@0,67.2,100..900;1,67.2,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>SR quotes</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <nav class="navbar">
-      <title> Semen Retention</title>
+      <img src="SR_logo.png" alt="Semen Retention" class="sr-logo" />
+      <h2>Semen Retention API</h2>
+      <div class="nav-buttons">
+        <a href="#today-quote" class="nav-btn">Today’s Quote</a>
+        <a
+          href="https://github.com/YourUsername/semen-retention-api"
+          target="_blank"
+          class="nav-btn"
+          >GitHub</a
+        >
+      </div>
     </nav>
 
-    <main>
-        <h2>A free open source SR Quotes API </h2>
-
-        <p> How to use ?</p>
-
-        <form action="" method="get">
-            <input id="request" type="text" value="http://localhost:8080/random" disabled >
-            <button type="submit" id="get_btn">GET</button>
-        </form>
-        
-        <div class="api-response">
-                <label for="response">Response</label>
-                <textarea name="response" id="response">
-
-                </textarea>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="main-text">Free API for Daily Semen Retention Quotes</p>
+        <p class="next-text">
+          Get powerful motivational quotes to fuel your retention journey — via
+          a simple REST API.
+        </p>
+        <div>
+          <a href="#request" class="gt-btn">Get Started</a>
         </div>
-      
+      </div>
+    </section>
 
-
+    <main>
+      <h2>How to use?</h2>
+      <form>
+        <input
+          id="request"
+          type="text"
+          value="http://localhost:8080/random"
+          disabled
+        />
+        <button type="submit" id="get_btn">GET</button>
+      </form>
+      <div class="api-response">
+        <label for="response">Response</label>
+        <textarea name="response" id="response"> </textarea>
+      </div>
     </main>
-    
+
+    <div class="line-break"></div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <img src="SR_logo.png" alt="Semen Retention Logo" class="sr-logo1" />
+          <p>&copy; 2025 Semen Retention API. All rights reserved.</p>
+        </div>
+
+        <div class="footer-right">
+          <a
+            href="https://github.com/YourUsername/semen-retention-api"
+            target="_blank"
+          >
+            <img src="github-icon.png" class="github-logo" />
+          </a>
+          <a href="mailto:your@email.com">
+            <img src="gmail.icon.png" class="gmail-logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
     <!-------- Script ----------------->
-    <script src = "script.js"></script>
-    
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
