@@ -15,6 +15,11 @@ body {
   font-family: "Segoe UI", sans-serif;
 }
 
+.copy-link {
+  width: 30px;
+  height: 30px;
+}
+
 .line-break {
   width: 1400px;
   height: 1px;
