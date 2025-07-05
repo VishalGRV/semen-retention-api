@@ -42,19 +42,20 @@
     </section>
 
     <main>
-      <h2>How to use?</h2>
-      <form>
-        <input
-          id="request"
-          type="text"
-          value="http://localhost:8080/random"
-          disabled
-        />
-        <button type="submit" id="get_btn">GET</button>
-      </form>
+      <div class="header-with-options">
+        <h2>How to use?</h2>
+        <div class="format-toggle">
+          <button class="format-btn active" data-format="json">Json</button>
+          <button class="format-btn" data-format="text">Text</button>
+        </div>
+      </div>
+      <div class="request-div">
+        <code class="request"> http://localhost:8080/random </code>
+        <button type="submit" class="get_btn">GET</button>
+      </div>
       <div class="api-response">
         <label for="response">Response</label>
-        <textarea name="response" id="response"> </textarea>
+        <pre name="response" class="response"></pre>
       </div>
     </main>
 
