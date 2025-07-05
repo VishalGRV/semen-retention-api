@@ -137,6 +137,7 @@ html {
   background: white;
   color: #2c5364;
 }
+
 /* 
 main {
   padding: 2rem;
@@ -165,8 +166,54 @@ main h2 {
   margin-bottom: 1rem;
 }
 
-/* Form Styling */
-form {
+.header-with-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.format-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.format-btn {
+  position: relative;
+  padding: 0.5rem 1.4rem;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.active {
+  border-color: #00c9a7;
+  color: #ffffff;
+  background: linear-gradient(to right, #00c9a715, #00c9a720);
+  box-shadow: 0 0 1 px #00c9a7aa;
+}
+
+.format-btn:hover {
+  border-color: #00c9a7;
+  color: #00c9a7;
+}
+
+/* .format-btn .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  background-color: #00c9a7;
+  display: none; /* hidden by default } */
+
+.request-div {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -174,18 +221,18 @@ form {
   align-items: center;
 }
 
-#request {
+.request {
   flex: 1;
   padding: 0.8rem 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #f5f5f5;
-  color: #555;
+  color: #1e1c1c;
   font-size: 1rem;
   cursor: text;
 }
 
-#get_btn {
+.get_btn {
   padding: 0.8rem 1.2rem;
   background-color: #00c9a7;
   color: white;
@@ -204,6 +251,7 @@ form {
 .api-response {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .api-response label {
@@ -213,16 +261,23 @@ form {
   color: #ffffff;
 }
 
-.api-response textarea {
-  width: 100%;
-  min-height: 100px;
+.response {
+  min-height: 120px;
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 0.95rem;
-  color: #2d3436;
-  resize: none;
+  font-size: 1rem;
+  color: #1e1c1c;
   background-color: #f9f9f9;
+  overflow: auto;
+}
+
+.response::-webkit-scrollbar {
+  height: 10px;
+}
+.response::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #989b9d;
 }
 
 .footer {
