@@ -138,17 +138,6 @@ html {
   color: #2c5364;
 }
 
-/* 
-main {
-  padding: 2rem;
-  max-width: 800px;
-  background: #254651;
-  color: #f1f1f1;
-  box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  margin: 5rem auto;
-} */
-
 main {
   background: rgba(255, 255, 255, 0.058);
   max-width: 800px;
@@ -243,8 +232,8 @@ main h2 {
   transition: background 0.3s ease;
 }
 
-#get_btn:hover {
-  background-color: #00b89f;
+.get_btn:hover {
+  background-color: #00b8a090;
 }
 
 /* Response Section */
