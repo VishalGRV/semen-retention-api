@@ -9,8 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100;1,14..32,100&family=Noto+Sans:ital,wdth,wght@0,67.2,100..900;1,67.2,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles1.css" />
-    <link rel="icon" type="image/png" href="SR_logo.png" />
+    <link rel="stylesheet" href="../css/styles1.css" />
+    <link rel="icon" type="image/png" href="../images/SR_logo.png" />
     <title>Semen Retention API</title>
   </head>
   <body>
@@ -23,11 +23,14 @@
         </div>
         <div class="api-link-container">
           <input type="text" class="quote-url" readonly />
-          <button class="copy-btn"><img src="copy.webp" alt="" /></button>
+          <button class="copy-btn" onclick="copyText(this)">
+            <img src="../images/copy.webp" alt="" />
+            <span class="tooltip"></span>
+          </button>
         </div>
       </div>
     </div>
 
-    <script src="today.js"></script>
+    <script src="../script/today.js"></script>
   </body>
 </html>
