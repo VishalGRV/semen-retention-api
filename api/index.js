@@ -8,6 +8,10 @@ const PORT = 8080;
 
 app.use(express.static(__dirname));
 app.use(cors());
+app.use(express.static(path.join(__dirname, "../html")));
+app.use(express.static(path.join(__dirname, "../css")));
+app.use(express.static(path.join(__dirname, "../script")));
+app.use(express.static(path.join(__dirname, "../images")));
 
 app.listen(PORT, () => console.log(`Im live on http://localhost:${PORT} `));
 
